@@ -1,0 +1,28 @@
+Collecting mxnet
+  Using cached mxnet-1.7.0.post2-py2.py3-none-win_amd64.whl (33.1 MB)
+Collecting graphviz<0.9.0,>=0.8.1
+  Using cached graphviz-0.8.4-py2.py3-none-any.whl (16 kB)
+Requirement already satisfied: requests<2.19.0,>=2.18.4 in c:\users\ssafy\ssafy08\s08p22a205\domain\venv\lib\site-packages (from mxnet) (2.18.4)
+Collecting numpy<1.17.0,>=1.8.2
+  Using cached numpy-1.16.6.zip (5.1 MB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in c:\users\ssafy\ssafy08\s08p22a205\domain\venv\lib\site-packages (from requests<2.19.0,>=2.18.4->mxnet) (3.0.4)
+Requirement already satisfied: urllib3<1.23,>=1.21.1 in c:\users\ssafy\ssafy08\s08p22a205\domain\venv\lib\site-packages (from requests<2.19.0,>=2.18.4->mxnet) (1.22)
+Requirement already satisfied: idna<2.7,>=2.5 in c:\users\ssafy\ssafy08\s08p22a205\domain\venv\lib\site-packages (from requests<2.19.0,>=2.18.4->mxnet) (2.6)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\ssafy\ssafy08\s08p22a205\domain\venv\lib\site-packages (from requests<2.19.0,>=2.18.4->mxnet) (2022.12.7)
+Using legacy 'setup.py install' for numpy, since package 'wheel' is not installed.
+Installing collected packages: numpy, graphviz, mxnet
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.24.2
+    Uninstalling numpy-1.24.2:
+      Successfully uninstalled numpy-1.24.2
+  Running setup.py install for numpy: started
+  Running setup.py install for numpy: finished with status 'error'
+  Rolling back uninstall of numpy
+  Moving to c:\users\ssafy\ssafy08\s08p22a205\domain\venv\lib\site-packages\numpy-1.24.2.dist-info\
+   from C:\Users\SSAFY\ssafy08\S08P22A205\domain\venv\Lib\site-packages\~umpy-1.24.2.dist-info
+  Moving to c:\users\ssafy\ssafy08\s08p22a205\domain\venv\lib\site-packages\numpy\
+   from C:\Users\SSAFY\ssafy08\S08P22A205\domain\venv\Lib\site-packages\~umpy
+  Moving to c:\users\ssafy\ssafy08\s08p22a205\domain\venv\scripts\f2py.exe
+   from C:\Users\SSAFY\AppData\Local\Temp\pip-uninstall-pl9i48wr\f2py.exe

@@ -1,0 +1,430 @@
+/* Global setup */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-black: #000000;
+  --hover-color: #6495ed;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 22px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-1Thin";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-2ExtraLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-5Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-6Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-7ExtraBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-8Heavy";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-9Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cafe24Shiningstar";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InkLipquid";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+body {
+  position: relative;
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "GangwonEdu_OTFBoldA"; */
+  font-family: "S-CoreDream-4Regular";
+  /* font-family: "GmarketSansMedium"; */
+
+  height: 100%;
+  margin: 0;
+  /* 글씨에 커서를 가까이해도 원형 유지 */
+  cursor: default;
+}
+
+#root {
+  height: 100%;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  background-color: #fcfaff;
+  width: 100%;
+  height: 100%;
+}
+
+.text__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  z-index: 10;
+  left: 6vw;
+  top: 4vw;
+}
+
+#main-title {
+  font-family: "Niconne";
+  font-weight: bolder;
+  font-size: 6vw;
+  line-height: 7vw;
+
+  color: #ffffff;
+  /* color: #505050; */
+  /* margin-top: 50vh; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#sub-title {
+  font-family: "InkLipquid";
+
+  font-size: 2vw;
+  /* font-size: 1.8vw; */
+  letter-spacing: 2px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  color: #fff;
+  /* color: #000000; */
+}
+
+.google__wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  left: 6vw;
+  bottom: 68px;
+  z-index: 10;
+}
+
+#google-logo {
+  height: 2.5vw;
+}
+
+.search__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 12px 20px;
+  gap: 10px;
+  width: 13vw;
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+.search__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#search-icon {
+  width: 1.2vw;
+  height: 1.2vw;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: #4d4d4d;
+}
+
+#search-text {
+  font-size: 1vw;
+  line-height: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #545454;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#radial1 {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  left: -3.8vw;
+  top: -10vw;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 0, 46, 0.1792) 0%,
+    rgba(255, 92, 0, 0.0616) 100%
+  );
+  filter: blur(39px);
+  z-index: 3;
+}
+
+#radial2 {
+  position: absolute;
+  width: 57vw;
+  height: 57vw;
+  left: -8.4vw;
+  top: -14.5vw;
+
+  background: radial-gradient(
+    48.18% 48.18% at 50% 50%,
+    rgba(255, 0, 61, 0.2394) 0%,
+    rgba(255, 226, 226, 0.4158) 100%
+  );
+  filter: blur(38.5px);
+  z-index: 1;
+}
+
+#radial3 {
+  position: absolute;
+  width: 42vw;
+  height: 42vw;
+  left: -8vw;
+  bottom: -15vw;
+  background: radial-gradient(
+    48.18% 48.18% at 50% 50%,
+    rgba(251, 255, 0, 0.676) 0%,
+    rgba(255, 255, 226, 0.416) 100%
+  );
+  filter: blur(39px);
+  z-index: 2;
+}
+
+#radial4 {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  right: -10vw;
+  top: 17vw;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 200, 255, 0.291) 0%,
+    rgba(0, 208, 255, 0.096) 100%
+  );
+  filter: blur(39px);
+}
+
+#qr-img {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  right: 5vw;
+  bottom: 68px;
+}
+
+@media screen and (max-width: 929px) {
+  .text__wrapper {
+    display: none;
+  }
+  .google__wrapper {
+    display: none;
+  }
+  #qr-img {
+    display: none;
+  }
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-small);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+
+.modal__wrapper {
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+#modal-modal-title {
+  font-size: 1rem;
+  color: #ff003e;
+}
+
+.datepicker-modal {
+  max-width: 480px;
+  left: 50%;
+  /* transform: translateX(-50%); */
+}
+
+.datepicker.default {
+  margin: auto;
+  width: 100%;
+  max-width: 480px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.swal2-container {
+  max-width: 480px !important;
+  margin: 0 auto !important;
+}

@@ -1,0 +1,25 @@
+import styled from "styled-components";
+
+export const SDiv = styled.div<any>`
+  .arrow-up {
+    z-index: 9999;
+    position: absolute;
+    bottom: ${(props) => (props.down ? "2rem" : "6rem")};
+    right: 2rem;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #4e126b;
+    color: rgb(228, 228, 228);
+    border-radius: 50%;
+    opacity: 0;
+    /* opacity: 1; */
+    pointer-events: none;
+    transition: all var(--animation-duration) linear;
+  }
+
+  .arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+`;
